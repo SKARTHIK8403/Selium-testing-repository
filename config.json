@@ -1,0 +1,28 @@
+{
+    "base_url": "http://localhost:5000",
+    "login": {
+      "username": "user",
+      "password": "password",
+      "invalid_username": "invalid_username",
+      "invalid_password": "invalid_password"
+    },
+    "test_cases": [
+      {
+        "id": "TC001",
+        "description": "Verify the complete e-commerce flow including login, cart operations, and checkout.",
+        "preconditions": "User must have valid credentials and product IDs must be available.",
+        "steps": [
+          "Open the browser and navigate to the home page.",
+          "Test login functionality with valid credentials.",
+          "Verify the cart is empty.",
+          "Add items to the cart one by one.",
+          "Navigate to the cart page and check if items are present.",
+          "Remove one item from the cart.",
+          "Verify that the checkout button is present and functional in the cart page.",
+          "Navigate to the checkout page and test the 'Back to Home' button."
+        ],
+        "expected_result": "The e-commerce flow should function correctly, with items added to the cart, one item removed, the checkout button present and functional, and the 'Back to Home' button leading to the home page."
+      }
+    ]
+  }
+  
